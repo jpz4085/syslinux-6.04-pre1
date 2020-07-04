@@ -1,0 +1,14 @@
+The alternate syslinux installer for Mac can be compiled using a full Xcode
+installation or the command line development tools installed by xcode-select.
+If using Xcode configure the project file path, argument and variable settings
+to match your development environment for building, running and debugging.
+
+Makefile options include:
+
+make         - build program binaries
+make clean   - delete all build files and binaries
+make dist    - delete build files and move binaries to bios folder
+make install - copy binaries, man pages and mbr sector files to
+               the installation folders defined in mk/mac.mk
+
+This installer requires root privileges for device mounting and write access.
